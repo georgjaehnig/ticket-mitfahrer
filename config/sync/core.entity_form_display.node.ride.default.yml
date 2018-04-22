@@ -3,6 +3,8 @@ langcode: de
 status: true
 dependencies:
   config:
+    - field.field.node.ride.field_ride_from
+    - field.field.node.ride.field_ride_to
     - node.type.ride
 id: node.ride.default
 targetEntityType: node
@@ -15,6 +17,24 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_ride_from:
+    weight: 121
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_ride_to:
+    weight: 122
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   langcode:
     type: language_select
     weight: 2

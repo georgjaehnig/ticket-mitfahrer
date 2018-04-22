@@ -1,0 +1,20 @@
+uuid: 86be03c2-58e0-42c4-ba8a-06898721c9ad
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_ride_to
+field_name: field_ride_to
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

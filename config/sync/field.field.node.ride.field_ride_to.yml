@@ -1,0 +1,29 @@
+uuid: fac4eef8-2fd3-453d-889d-823057e5a8bd
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ride_to
+    - node.type.ride
+    - taxonomy.vocabulary.stations
+id: node.ride.field_ride_to
+field_name: field_ride_to
+entity_type: node
+bundle: ride
+label: Nach
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      stations: stations
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,29 @@
+uuid: 2d966fb9-7666-4d33-a0cc-d2435e28f7e0
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ride_from
+    - node.type.ride
+    - taxonomy.vocabulary.stations
+id: node.ride.field_ride_from
+field_name: field_ride_from
+entity_type: node
+bundle: ride
+label: Von
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      stations: stations
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference
