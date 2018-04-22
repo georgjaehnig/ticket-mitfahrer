@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.ride.field_ride_contact
     - field.field.node.ride.field_ride_date
+    - field.field.node.ride.field_ride_email
     - field.field.node.ride.field_ride_from
     - field.field.node.ride.field_ride_to
     - field.field.node.ride.field_ride_via
@@ -33,6 +34,13 @@ content:
       timezone_override: ''
     third_party_settings: {  }
     type: datetime_default
+    region: content
+  field_ride_email:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
     region: content
   field_ride_from:
     weight: 101

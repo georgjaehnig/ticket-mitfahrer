@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.ride.field_ride_contact
     - field.field.node.ride.field_ride_date
+    - field.field.node.ride.field_ride_email
     - field.field.node.ride.field_ride_from
     - field.field.node.ride.field_ride_to
     - field.field.node.ride.field_ride_via
@@ -32,6 +33,14 @@ content:
       increment: 15
     third_party_settings: {  }
     type: datetime_datelist
+    region: content
+  field_ride_email:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
     region: content
   field_ride_from:
     weight: 0
