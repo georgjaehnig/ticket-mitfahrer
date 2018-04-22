@@ -28,12 +28,9 @@ content:
     region: content
   field_ride_date:
     weight: 3
-    settings:
-      date_order: DMY
-      time_type: none
-      increment: 15
+    settings: {  }
     third_party_settings: {  }
-    type: datetime_datelist
+    type: datetime_default
     region: content
   field_ride_email:
     weight: 26
