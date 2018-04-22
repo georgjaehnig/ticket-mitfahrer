@@ -7,9 +7,11 @@ dependencies:
     - field.storage.node.field_ride_from
     - field.storage.node.field_ride_to
     - node.type.ride
+    - taxonomy.vocabulary.stations
   module:
     - datetime
     - node
+    - taxonomy
     - user
 id: all_rides
 label: 'Alle Mitfahrten'
@@ -338,6 +340,106 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: bundle
+        field_ride_from_target_id:
+          id: field_ride_from_target_id
+          table: node__field_ride_from
+          field: field_ride_from_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_ride_from_target_id_op
+            label: Von
+            description: ''
+            use_operator: false
+            operator: field_ride_from_target_id_op
+            identifier: from
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: Von
+            description: ''
+            identifier: from
+            optional: true
+            widget: select
+            multiple: true
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: ''
+                operator: or
+                value: null
+              2:
+                title: ''
+                operator: or
+                value: null
+              3:
+                title: ''
+                operator: or
+                value: null
+          reduce_duplicates: false
+          type: textfield
+          limit: true
+          vid: stations
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        field_ride_to_target_id:
+          id: field_ride_to_target_id
+          table: node__field_ride_to
+          field: field_ride_to_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_ride_to_target_id_op
+            label: Nach
+            description: ''
+            use_operator: false
+            operator: field_ride_to_target_id_op
+            identifier: to
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: textfield
+          limit: true
+          vid: stations
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
       sorts:
         created:
           id: created
@@ -366,7 +468,9 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
@@ -386,7 +490,9 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
