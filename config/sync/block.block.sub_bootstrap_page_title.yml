@@ -1,0 +1,20 @@
+uuid: d35a2089-d19a-436f-be99-1ca608973e90
+langcode: de
+status: true
+dependencies:
+  theme:
+    - sub_bootstrap
+_core:
+  default_config_hash: 8yptDf6WrXxeyevUz4nP5vfr7BtxQqCBMninhV2IJ1g
+id: sub_bootstrap_page_title
+theme: sub_bootstrap
+region: content
+weight: -30
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: Seitentitel
+  provider: core
+  label_display: '0'
+visibility: {  }
