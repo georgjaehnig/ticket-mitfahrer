@@ -1,0 +1,23 @@
+uuid: aac006f2-e90f-4ca4-99aa-486c74eb2298
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.feeds_item
+    - taxonomy.vocabulary.stations
+  module:
+    - feeds
+id: taxonomy_term.stations.feeds_item
+field_name: feeds_item
+entity_type: taxonomy_term
+bundle: stations
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

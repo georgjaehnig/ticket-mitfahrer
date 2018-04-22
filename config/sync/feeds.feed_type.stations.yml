@@ -1,0 +1,50 @@
+uuid: 3c5dcba0-9eeb-4609-8103-f2213d6dfb9d
+langcode: de
+status: true
+dependencies:
+  module:
+    - taxonomy
+label: Stations
+id: stations
+description: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: TAB
+  no_headers: false
+  line_limit: 100
+processor: 'entity:taxonomy_term'
+processor_configuration:
+  update_existing: 1
+  update_non_existent: _delete
+  expire: -1
+  skip_hash_check: false
+  values:
+    vid: stations
+  owner_id: 0
+  authorize: false
+  owner_feed_author: false
+custom_sources:
+  station:
+    label: Station
+    value: Station
+    machine_name: station
+  name:
+    label: Name
+    value: Name
+    machine_name: name
+  bahnhof:
+    label: Bahnhof
+    value: Bahnhof
+    machine_name: bahnhof
+mappings:
+  -
+    target: name
+    map:
+      value: bahnhof
+    unique:
+      value: '1'
