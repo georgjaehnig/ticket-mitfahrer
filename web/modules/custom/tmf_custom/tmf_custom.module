@@ -8,9 +8,9 @@ function tmf_custom_node_presave($node) {
     // Set title to From and To.
     $node->title = 
       'Mitfahrer gesucht von ' . 
-      $node->get('field_last_name')->getString() . 
+      $node->get('field_ride_from')->getString() . 
       ' nach ' . 
-      $node->get('field_last_name')->getString() .
+      $node->get('field_ride_to')->getString() .
       '';
   }
 }
