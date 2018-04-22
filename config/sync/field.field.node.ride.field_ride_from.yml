@@ -11,7 +11,7 @@ field_name: field_ride_from
 entity_type: node
 bundle: ride
 label: Von
-description: ''
+description: 'Wo Sie starten möchten. Geben Sie möglichst eine größere Station ein, um mehr Mitfahrer zu finden.'
 required: true
 translatable: false
 default_value: {  }

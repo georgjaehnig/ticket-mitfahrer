@@ -11,7 +11,7 @@ field_name: field_ride_to
 entity_type: node
 bundle: ride
 label: Nach
-description: ''
+description: 'Wo Sie hin möchten. Geben Sie möglichst eine größere Station ein, um mehr Mitfahrer zu finden.'
 required: true
 translatable: false
 default_value: {  }
