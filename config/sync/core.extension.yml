@@ -17,6 +17,7 @@ module:
   system: 0
   taxonomy: 0
   text: 0
+  tmf_custom: 0
   update: 0
   user: 0
   views_ui: 0
