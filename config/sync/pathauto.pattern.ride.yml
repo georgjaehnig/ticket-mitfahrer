@@ -1,0 +1,22 @@
+uuid: 98bb4ce1-1893-4c39-8543-66da469596fb
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+id: ride
+label: ride
+type: 'canonical_entities:node'
+pattern: 'mitfahrten/[node:field_ride_from]-[node:field_ride_to]'
+selection_criteria:
+  5e532379-fa65-4ab9-a77a-3805c681f450:
+    id: node_type
+    bundles:
+      ride: ride
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 5e532379-fa65-4ab9-a77a-3805c681f450
+selection_logic: and
+weight: -5
+relationships: {  }
