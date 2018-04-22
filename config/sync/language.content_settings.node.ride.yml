@@ -1,0 +1,11 @@
+uuid: 7b2dfa47-8d8e-408c-9bcb-59f48bb1fd71
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.ride
+id: node.ride
+target_entity_type_id: node
+target_bundle: ride
+default_langcode: site_default
+language_alterable: false
