@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.ride.field_ride_date
     - field.field.node.ride.field_ride_email
     - field.field.node.ride.field_ride_from
+    - field.field.node.ride.field_ride_note
     - field.field.node.ride.field_ride_to
     - field.field.node.ride.field_ride_via
     - node.type.ride
@@ -50,6 +51,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_ride_note:
+    weight: 27
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
     region: content
   field_ride_to:
     weight: 1
