@@ -1,0 +1,11 @@
+uuid: 943206b3-6f95-449b-b4a5-e13440ee4aa7
+langcode: de
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.stations
+id: taxonomy_term.stations
+target_entity_type_id: taxonomy_term
+target_bundle: stations
+default_langcode: site_default
+language_alterable: false

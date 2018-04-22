@@ -1,0 +1,9 @@
+uuid: 176d433f-cdc1-4e98-bea4-5a9044eea8e9
+langcode: de
+status: true
+dependencies: {  }
+name: Stationen
+vid: stations
+description: ''
+hierarchy: 0
+weight: 0
