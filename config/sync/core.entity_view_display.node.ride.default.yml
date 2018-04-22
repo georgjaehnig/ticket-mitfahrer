@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.ride.field_ride_from
     - field.field.node.ride.field_ride_to
+    - field.field.node.ride.field_ride_via
     - node.type.ride
   module:
     - user
@@ -23,6 +24,14 @@ content:
     region: content
   field_ride_to:
     weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_ride_via:
+    weight: 103
     label: above
     settings:
       link: true
