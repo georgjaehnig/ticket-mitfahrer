@@ -1,0 +1,8 @@
+uuid: 136ade61-e68d-4c48-9d9c-fffd8f5ad1cd
+langcode: de
+status: true
+dependencies: {  }
+id: german_short
+label: 'German short'
+locked: false
+pattern: 'D, d.m.Y'
