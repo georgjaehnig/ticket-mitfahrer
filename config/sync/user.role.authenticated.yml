@@ -10,3 +10,6 @@ weight: 1
 is_admin: false
 permissions:
   - 'access content'
+  - 'create ride content'
+  - 'delete own ride content'
+  - 'edit own ride content'
