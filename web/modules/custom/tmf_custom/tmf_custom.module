@@ -1,16 +1,19 @@
 <?PHP
 
+use Drupal\taxonomy\Entity\Term;
+
 /**
  * Implements hook_node_presave().
  */
 function tmf_custom_node_presave($node) {
   if ('ride' == $node->getType()) {
     // Set title to From and To.
-    $node->title = 
-      'Mitfahrer gesucht von ' . 
-      $node->get('field_ride_from')->getString() . 
-      ' nach ' . 
-      $node->get('field_ride_to')->getString() .
-      '';
+    $termFrom = Term::load($node->get('field_ride_from')->target_id);
+    $termTo   = Term::load($node->get('field_ride_to')->target_id);
+
+    $from     = $termFrom->getName();
+    $to       = $termTo->getName();
+
+    $node->title = 'Mitfahrer gesucht von ' . $from . ' nach ' . $to;
   }
 }
