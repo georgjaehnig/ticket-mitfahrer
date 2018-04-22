@@ -17,7 +17,7 @@ bundle: ride
 mode: default
 content:
   field_ride_contact:
-    weight: 26
+    weight: 4
     settings:
       size: 60
       placeholder: ''
@@ -25,7 +25,7 @@ content:
     type: string_textfield
     region: content
   field_ride_date:
-    weight: 4
+    weight: 3
     settings:
       date_order: DMY
       time_type: none
@@ -34,7 +34,7 @@ content:
     type: datetime_datelist
     region: content
   field_ride_from:
-    weight: 1
+    weight: 0
     settings:
       match_operator: CONTAINS
       size: 60
@@ -43,7 +43,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_ride_to:
-    weight: 2
+    weight: 1
     settings:
       match_operator: CONTAINS
       size: 60
@@ -52,7 +52,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_ride_via:
-    weight: 3
+    weight: 2
     settings:
       match_operator: CONTAINS
       size: 60
@@ -60,18 +60,11 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  title:
-    type: string_textfield
-    weight: 0
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
 hidden:
   created: true
   langcode: true
   promote: true
   status: true
   sticky: true
+  title: true
   uid: true
