@@ -1,0 +1,18 @@
+uuid: e0e1e815-3ba4-456f-813b-6df4e0da4b03
+langcode: de
+status: true
+dependencies:
+  module:
+    - user
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  member_for:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
