@@ -1,2 +1,16 @@
 <?PHP
 
+/**
+ * Implements hook_node_presave().
+ */
+function tmf_custom_node_presave($node) {
+  if ('ride' == $node->getType()) {
+    // Set title to From and To.
+    $node->title = 
+      'Mitfahrer gesucht von ' . 
+      $node->get('field_last_name')->getString() . 
+      ' nach ' . 
+      $node->get('field_last_name')->getString() .
+      '';
+  }
+}
