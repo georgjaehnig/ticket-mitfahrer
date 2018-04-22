@@ -1,0 +1,14 @@
+uuid: d2f34a37-3ade-4e69-af6a-2795b3f9f4ec
+name: ticket-mitfahrer.de
+mail: info@ticket-mitfahrer.de
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /user/login
+admin_compact_mode: false
+weight_select_max: 100
+langcode: de
+default_langcode: de
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
