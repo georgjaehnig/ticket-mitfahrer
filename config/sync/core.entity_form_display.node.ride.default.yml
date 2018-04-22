@@ -33,7 +33,7 @@ content:
     type: datetime_default
     region: content
   field_ride_email:
-    weight: 26
+    weight: 6
     settings:
       size: 60
       placeholder: ''
@@ -50,7 +50,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_ride_note:
-    weight: 27
+    weight: 5
     settings:
       rows: 5
       placeholder: ''
