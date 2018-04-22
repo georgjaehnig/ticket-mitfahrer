@@ -1,8 +1,15 @@
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
-  url: 'http://l.tmf/themes/contrib/bootstrap/favicon.ico'
+  url: 'http://l.tmf/themes/custom/sub_bootstrap/favicon.ico'
   use_default: true
+schemas:
+  bootstrap: 8000
+  sub_bootstrap: 8000
+navbar_inverse: 1
+table_responsive: '-1'
+table: ''
+navbar_position: static-top
 features:
   comment_user_picture: true
   comment_user_verification: true
@@ -12,6 +19,3 @@ logo:
   path: ''
   url: ''
   use_default: true
-schemas:
-  bootstrap: 8000
-  sub_bootstrap: 8000
