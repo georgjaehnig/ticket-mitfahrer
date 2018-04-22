@@ -1,5 +1,6 @@
 module:
   block: 0
+  datetime: 0
   dblog: 0
   dynamic_page_cache: 0
   feeds: 0
