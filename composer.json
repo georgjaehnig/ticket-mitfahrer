@@ -24,6 +24,7 @@
         "drupal/core": "~8.5.1",
         "drupal/date_popup": "^1.0",
         "drupal/feeds": "3.x-dev",
+        "drupal/pathauto": "^1.1",
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
