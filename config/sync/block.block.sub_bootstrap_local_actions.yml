@@ -8,8 +8,8 @@ _core:
   default_config_hash: PffmQ-ABSz5tFjWmVsR7NesunDnEivvopnJnBjl8KNE
 id: sub_bootstrap_local_actions
 theme: sub_bootstrap
-region: content
-weight: -10
+region: sidebar_first
+weight: -1
 provider: null
 plugin: local_actions_block
 settings:

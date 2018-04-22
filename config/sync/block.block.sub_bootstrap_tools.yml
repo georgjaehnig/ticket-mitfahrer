@@ -12,8 +12,8 @@ _core:
   default_config_hash: xCOijLdB1-UgXxQ9a0D1_pd8vxNEhfMnxXZc8jYhHjs
 id: sub_bootstrap_tools
 theme: sub_bootstrap
-region: header
-weight: 0
+region: sidebar_first
+weight: -2
 provider: null
 plugin: 'system_menu_block:tools'
 settings:
