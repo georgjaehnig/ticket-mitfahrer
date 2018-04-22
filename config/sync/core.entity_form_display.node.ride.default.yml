@@ -3,6 +3,7 @@ langcode: de
 status: true
 dependencies:
   config:
+    - field.field.node.ride.field_ride_contact
     - field.field.node.ride.field_ride_date
     - field.field.node.ride.field_ride_from
     - field.field.node.ride.field_ride_to
@@ -15,6 +16,14 @@ targetEntityType: node
 bundle: ride
 mode: default
 content:
+  field_ride_contact:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_ride_date:
     weight: 4
     settings: {  }
