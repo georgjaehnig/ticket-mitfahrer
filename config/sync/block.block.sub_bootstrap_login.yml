@@ -1,4 +1,4 @@
-uuid: fd7be787-54ad-4cb6-8619-09c7f825d62c
+uuid: 5be55ef6-c6d4-4ff4-b24b-119fb3070d72
 langcode: de
 status: true
 dependencies:
@@ -10,7 +10,7 @@ _core:
   default_config_hash: 4QlSnWBcxxKMIFRM8sbu_MjSkcp3NjGgnVrc-lynQHI
 id: sub_bootstrap_login
 theme: sub_bootstrap
-region: sidebar_first
+region: header
 weight: 0
 provider: null
 plugin: user_login_block
