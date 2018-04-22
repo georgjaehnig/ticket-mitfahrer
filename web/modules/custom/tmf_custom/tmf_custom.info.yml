@@ -1,0 +1,4 @@
+name: TMF Custom
+type: module
+description: 'Custom code related to ticket-mitfahrer.'
+core: 8.x
