@@ -74,6 +74,49 @@ display:
             next: ››
       style:
         type: table
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          override: true
+          sticky: false
+          caption: ''
+          summary: ''
+          description: ''
+          columns:
+            field_ride_date: field_ride_date
+            field_ride_from: field_ride_from
+            field_ride_to: field_ride_to
+            field_ride_via: field_ride_via
+          info:
+            field_ride_date:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_ride_from:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_ride_to:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_ride_via:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+          default: '-1'
+          empty_table: false
       row:
         type: fields
       fields:
@@ -204,14 +247,14 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        field_ride_to:
-          id: field_ride_to
-          table: node__field_ride_to
-          field: field_ride_to
+        field_ride_via:
+          id: field_ride_via
+          table: node__field_ride_via
+          field: field_ride_via
           relationship: none
           group_type: group
           admin_label: ''
-          label: Nach
+          label: Über
           exclude: false
           alter:
             alter_text: false
@@ -267,14 +310,14 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        field_ride_via:
-          id: field_ride_via
-          table: node__field_ride_via
-          field: field_ride_via
+        field_ride_to:
+          id: field_ride_to
+          table: node__field_ride_to
+          field: field_ride_to
           relationship: none
           group_type: group
           admin_label: ''
-          label: Über
+          label: Nach
           exclude: false
           alter:
             alter_text: false
