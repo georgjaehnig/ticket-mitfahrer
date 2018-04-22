@@ -3,10 +3,13 @@ langcode: de
 status: true
 dependencies:
   config:
+    - field.field.node.ride.field_ride_date
     - field.field.node.ride.field_ride_from
     - field.field.node.ride.field_ride_to
     - field.field.node.ride.field_ride_via
     - node.type.ride
+  module:
+    - datetime
 id: node.ride.default
 targetEntityType: node
 bundle: ride
@@ -18,6 +21,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_ride_date:
+    weight: 124
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
   field_ride_from:
     weight: 121
     settings:

@@ -3,17 +3,28 @@ langcode: de
 status: true
 dependencies:
   config:
+    - field.field.node.ride.field_ride_date
     - field.field.node.ride.field_ride_from
     - field.field.node.ride.field_ride_to
     - field.field.node.ride.field_ride_via
     - node.type.ride
   module:
+    - datetime
     - user
 id: node.ride.default
 targetEntityType: node
 bundle: ride
 mode: default
 content:
+  field_ride_date:
+    weight: 104
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
   field_ride_from:
     weight: 101
     label: above
